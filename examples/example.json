@@ -1,0 +1,1076 @@
+{
+  "resources": [
+    {
+      "title": "root",
+      "resource": "group",
+      "gid": 0
+    },
+    {
+      "title": "bin",
+      "resource": "group",
+      "gid": 1
+    },
+    {
+      "title": "daemon",
+      "resource": "group",
+      "gid": 2
+    },
+    {
+      "title": "sys",
+      "resource": "group",
+      "gid": 3
+    },
+    {
+      "title": "adm",
+      "resource": "group",
+      "gid": 4
+    },
+    {
+      "title": "tty",
+      "resource": "group",
+      "gid": 5
+    },
+    {
+      "title": "disk",
+      "resource": "group",
+      "gid": 6
+    },
+    {
+      "title": "lp",
+      "resource": "group",
+      "gid": 7
+    },
+    {
+      "title": "mem",
+      "resource": "group",
+      "gid": 8
+    },
+    {
+      "title": "kmem",
+      "resource": "group",
+      "gid": 9
+    },
+    {
+      "title": "wheel",
+      "resource": "group",
+      "gid": 10
+    },
+    {
+      "title": "floppy",
+      "resource": "group",
+      "gid": 11
+    },
+    {
+      "title": "mail",
+      "resource": "group",
+      "gid": 12
+    },
+    {
+      "title": "news",
+      "resource": "group",
+      "gid": 13
+    },
+    {
+      "title": "uucp",
+      "resource": "group",
+      "gid": 14
+    },
+    {
+      "title": "man",
+      "resource": "group",
+      "gid": 15
+    },
+    {
+      "title": "cron",
+      "resource": "group",
+      "gid": 16
+    },
+    {
+      "title": "console",
+      "resource": "group",
+      "gid": 17
+    },
+    {
+      "title": "audio",
+      "resource": "group",
+      "gid": 18
+    },
+    {
+      "title": "cdrom",
+      "resource": "group",
+      "gid": 19
+    },
+    {
+      "title": "dialout",
+      "resource": "group",
+      "gid": 20
+    },
+    {
+      "title": "ftp",
+      "resource": "group",
+      "gid": 21
+    },
+    {
+      "title": "sshd",
+      "resource": "group",
+      "gid": 22
+    },
+    {
+      "title": "at",
+      "resource": "group",
+      "gid": 25
+    },
+    {
+      "title": "tape",
+      "resource": "group",
+      "gid": 26
+    },
+    {
+      "title": "video",
+      "resource": "group",
+      "gid": 27
+    },
+    {
+      "title": "netdev",
+      "resource": "group",
+      "gid": 28
+    },
+    {
+      "title": "readproc",
+      "resource": "group",
+      "gid": 30
+    },
+    {
+      "title": "squid",
+      "resource": "group",
+      "gid": 31
+    },
+    {
+      "title": "xfs",
+      "resource": "group",
+      "gid": 33
+    },
+    {
+      "title": "kvm",
+      "resource": "group",
+      "gid": 34
+    },
+    {
+      "title": "games",
+      "resource": "group",
+      "gid": 35
+    },
+    {
+      "title": "shadow",
+      "resource": "group",
+      "gid": 42
+    },
+    {
+      "title": "postgres",
+      "resource": "group",
+      "gid": 70
+    },
+    {
+      "title": "cdrw",
+      "resource": "group",
+      "gid": 80
+    },
+    {
+      "title": "nut",
+      "resource": "group",
+      "gid": 84
+    },
+    {
+      "title": "usb",
+      "resource": "group",
+      "gid": 85
+    },
+    {
+      "title": "vpopmail",
+      "resource": "group",
+      "gid": 89
+    },
+    {
+      "title": "users",
+      "resource": "group",
+      "gid": 100
+    },
+    {
+      "title": "ntp",
+      "resource": "group",
+      "gid": 123
+    },
+    {
+      "title": "nofiles",
+      "resource": "group",
+      "gid": 200
+    },
+    {
+      "title": "smmsp",
+      "resource": "group",
+      "gid": 209
+    },
+    {
+      "title": "locate",
+      "resource": "group",
+      "gid": 245
+    },
+    {
+      "title": "abuild",
+      "resource": "group",
+      "gid": 300
+    },
+    {
+      "title": "utmp",
+      "resource": "group",
+      "gid": 406
+    },
+    {
+      "title": "ping",
+      "resource": "group",
+      "gid": 999
+    },
+    {
+      "title": "nogroup",
+      "resource": "group",
+      "gid": 65533
+    },
+    {
+      "title": "nobody",
+      "resource": "group",
+      "gid": 65534
+    },
+    {
+      "title": "WARNING: Ignoring APKINDEX.167438ca.tar.gz: No such file or directory",
+      "resource": "package",
+      "provider": "apk",
+      "versions": [
+        "WARNING: Ignoring APKINDEX.167438ca.tar.gz: No such file or directory"
+      ]
+    },
+    {
+      "title": "WARNING: Ignoring APKINDEX.a2e6dac0.tar.gz: No such file or directory",
+      "resource": "package",
+      "provider": "apk",
+      "versions": [
+        "WARNING: Ignoring APKINDEX.a2e6dac0.tar.gz: No such file or directory"
+      ]
+    },
+    {
+      "title": "WARNING: Ignoring APKINDEX.b83cced8.tar.gz: No such file or directory",
+      "resource": "package",
+      "provider": "apk",
+      "versions": [
+        "WARNING: Ignoring APKINDEX.b83cced8.tar.gz: No such file or directory"
+      ]
+    },
+    {
+      "title": "musl",
+      "resource": "package",
+      "provider": "apk",
+      "versions": [
+        "1.1.14-r9"
+      ]
+    },
+    {
+      "title": "busybox",
+      "resource": "package",
+      "provider": "apk",
+      "versions": [
+        "1.24.2-r8"
+      ]
+    },
+    {
+      "title": "alpine-baselayout",
+      "resource": "package",
+      "provider": "apk",
+      "versions": [
+        "3.0.2-r0"
+      ]
+    },
+    {
+      "title": "alpine-keys",
+      "resource": "package",
+      "provider": "apk",
+      "versions": [
+        "1.1-r0"
+      ]
+    },
+    {
+      "title": "zlib",
+      "resource": "package",
+      "provider": "apk",
+      "versions": [
+        "1.2.8-r2"
+      ]
+    },
+    {
+      "title": "libcrypto1.0",
+      "resource": "package",
+      "provider": "apk",
+      "versions": [
+        "1.0.2h-r0"
+      ]
+    },
+    {
+      "title": "libssl1.0",
+      "resource": "package",
+      "provider": "apk",
+      "versions": [
+        "1.0.2h-r0"
+      ]
+    },
+    {
+      "title": "apk-tools",
+      "resource": "package",
+      "provider": "apk",
+      "versions": [
+        "2.6.7-r0"
+      ]
+    },
+    {
+      "title": "scanelf",
+      "resource": "package",
+      "provider": "apk",
+      "versions": [
+        "1.1.6-r0"
+      ]
+    },
+    {
+      "title": "musl-utils",
+      "resource": "package",
+      "provider": "apk",
+      "versions": [
+        "1.1.14-r9"
+      ]
+    },
+    {
+      "title": "libc-utils",
+      "resource": "package",
+      "provider": "apk",
+      "versions": [
+        "0.7-r0"
+      ]
+    },
+    {
+      "title": "ca-certificates",
+      "resource": "package",
+      "provider": "apk",
+      "versions": [
+        "20160104-r4"
+      ]
+    },
+    {
+      "title": "hwdata-pci",
+      "resource": "package",
+      "provider": "apk",
+      "versions": [
+        "0.282-r0"
+      ]
+    },
+    {
+      "title": "pciutils-libs",
+      "resource": "package",
+      "provider": "apk",
+      "versions": [
+        "3.4.1-r1"
+      ]
+    },
+    {
+      "title": "pciutils",
+      "resource": "package",
+      "provider": "apk",
+      "versions": [
+        "3.4.1-r1"
+      ]
+    },
+    {
+      "title": "ncurses-terminfo-base",
+      "resource": "package",
+      "provider": "apk",
+      "versions": [
+        "6.0-r7"
+      ]
+    },
+    {
+      "title": "ncurses-terminfo",
+      "resource": "package",
+      "provider": "apk",
+      "versions": [
+        "6.0-r7"
+      ]
+    },
+    {
+      "title": "ncurses-libs",
+      "resource": "package",
+      "provider": "apk",
+      "versions": [
+        "6.0-r7"
+      ]
+    },
+    {
+      "title": "libedit",
+      "resource": "package",
+      "provider": "apk",
+      "versions": [
+        "20150325.3.1-r3"
+      ]
+    },
+    {
+      "title": "libffi",
+      "resource": "package",
+      "provider": "apk",
+      "versions": [
+        "3.2.1-r2"
+      ]
+    },
+    {
+      "title": "gdbm",
+      "resource": "package",
+      "provider": "apk",
+      "versions": [
+        "1.11-r1"
+      ]
+    },
+    {
+      "title": "gmp",
+      "resource": "package",
+      "provider": "apk",
+      "versions": [
+        "6.1.0-r0"
+      ]
+    },
+    {
+      "title": "yaml",
+      "resource": "package",
+      "provider": "apk",
+      "versions": [
+        "0.1.6-r1"
+      ]
+    },
+    {
+      "title": "ruby-libs",
+      "resource": "package",
+      "provider": "apk",
+      "versions": [
+        "2.3.1-r0"
+      ]
+    },
+    {
+      "title": "ruby",
+      "resource": "package",
+      "provider": "apk",
+      "versions": [
+        "2.3.1-r0"
+      ]
+    },
+    {
+      "title": "ruby-irb",
+      "resource": "package",
+      "provider": "apk",
+      "versions": [
+        "2.3.1-r0"
+      ]
+    },
+    {
+      "title": "ruby-json",
+      "resource": "package",
+      "provider": "apk",
+      "versions": [
+        "2.3.1-r0"
+      ]
+    },
+    {
+      "title": "ruby-rdoc",
+      "resource": "package",
+      "provider": "apk",
+      "versions": [
+        "2.3.1-r0"
+      ]
+    },
+    {
+      "title": "linux-pam",
+      "resource": "package",
+      "provider": "apk",
+      "versions": [
+        "1.2.1-r0"
+      ]
+    },
+    {
+      "title": "shadow",
+      "resource": "package",
+      "provider": "apk",
+      "versions": [
+        "4.2.1-r3"
+      ]
+    },
+    {
+      "title": "did_you_mean",
+      "resource": "package",
+      "provider": "gem",
+      "versions": [
+        "1.0.0"
+      ]
+    },
+    {
+      "title": "facter",
+      "resource": "package",
+      "provider": "gem",
+      "versions": [
+        "2.4.6"
+      ]
+    },
+    {
+      "title": "hiera",
+      "resource": "package",
+      "provider": "gem",
+      "versions": [
+        "3.2.0"
+      ]
+    },
+    {
+      "title": "json",
+      "resource": "package",
+      "provider": "gem",
+      "versions": [
+        "1.8.3"
+      ]
+    },
+    {
+      "title": "json_pure",
+      "resource": "package",
+      "provider": "gem",
+      "versions": [
+        "2.0.1"
+      ]
+    },
+    {
+      "title": "minitest",
+      "resource": "package",
+      "provider": "gem",
+      "versions": [
+        "5.8.3"
+      ]
+    },
+    {
+      "title": "net-telnet",
+      "resource": "package",
+      "provider": "gem",
+      "versions": [
+        "0.1.1"
+      ]
+    },
+    {
+      "title": "power_assert",
+      "resource": "package",
+      "provider": "gem",
+      "versions": [
+        "0.2.6"
+      ]
+    },
+    {
+      "title": "psych",
+      "resource": "package",
+      "provider": "gem",
+      "versions": [
+        "2.0.17"
+      ]
+    },
+    {
+      "title": "puppet",
+      "resource": "package",
+      "provider": "gem",
+      "versions": [
+        "4.5.2"
+      ]
+    },
+    {
+      "title": "rake",
+      "resource": "package",
+      "provider": "gem",
+      "versions": [
+        "10.4.2"
+      ]
+    },
+    {
+      "title": "rdoc",
+      "resource": "package",
+      "provider": "gem",
+      "versions": [
+        "4.2.1"
+      ]
+    },
+    {
+      "title": "test-unit",
+      "resource": "package",
+      "provider": "gem",
+      "versions": [
+        "3.1.5"
+      ]
+    },
+    {
+      "title": "root",
+      "resource": "user",
+      "uid": 0,
+      "gid": 0,
+      "groups": [
+        "root",
+        "bin",
+        "daemon",
+        "sys",
+        "adm",
+        "disk",
+        "wheel",
+        "floppy",
+        "dialout",
+        "tape",
+        "video"
+      ],
+      "home": "/root",
+      "shell": "/bin/ash",
+      "comment": "root"
+    },
+    {
+      "title": "bin",
+      "resource": "user",
+      "uid": 1,
+      "gid": 1,
+      "groups": [
+        "bin",
+        "daemon",
+        "sys"
+      ],
+      "home": "/bin",
+      "shell": "/sbin/nologin",
+      "comment": "bin"
+    },
+    {
+      "title": "daemon",
+      "resource": "user",
+      "uid": 2,
+      "gid": 2,
+      "groups": [
+        "bin",
+        "daemon",
+        "adm"
+      ],
+      "home": "/sbin",
+      "shell": "/sbin/nologin",
+      "comment": "daemon"
+    },
+    {
+      "title": "adm",
+      "resource": "user",
+      "uid": 3,
+      "gid": 4,
+      "groups": [
+        "sys",
+        "adm",
+        "disk"
+      ],
+      "home": "/var/adm",
+      "shell": "/sbin/nologin",
+      "comment": "adm"
+    },
+    {
+      "title": "lp",
+      "resource": "user",
+      "uid": 4,
+      "gid": 7,
+      "groups": [
+        "lp"
+      ],
+      "home": "/var/spool/lpd",
+      "shell": "/sbin/nologin",
+      "comment": "lp"
+    },
+    {
+      "title": "sync",
+      "resource": "user",
+      "uid": 5,
+      "gid": 0,
+      "groups": [
+
+      ],
+      "home": "/sbin",
+      "shell": "/bin/sync",
+      "comment": "sync"
+    },
+    {
+      "title": "shutdown",
+      "resource": "user",
+      "uid": 6,
+      "gid": 0,
+      "groups": [
+
+      ],
+      "home": "/sbin",
+      "shell": "/sbin/shutdown",
+      "comment": "shutdown"
+    },
+    {
+      "title": "halt",
+      "resource": "user",
+      "uid": 7,
+      "gid": 0,
+      "groups": [
+
+      ],
+      "home": "/sbin",
+      "shell": "/sbin/halt",
+      "comment": "halt"
+    },
+    {
+      "title": "mail",
+      "resource": "user",
+      "uid": 8,
+      "gid": 12,
+      "groups": [
+        "mail"
+      ],
+      "home": "/var/spool/mail",
+      "shell": "/sbin/nologin",
+      "comment": "mail"
+    },
+    {
+      "title": "news",
+      "resource": "user",
+      "uid": 9,
+      "gid": 13,
+      "groups": [
+        "news"
+      ],
+      "home": "/usr/lib/news",
+      "shell": "/sbin/nologin",
+      "comment": "news"
+    },
+    {
+      "title": "uucp",
+      "resource": "user",
+      "uid": 10,
+      "gid": 14,
+      "groups": [
+        "uucp"
+      ],
+      "home": "/var/spool/uucppublic",
+      "shell": "/sbin/nologin",
+      "comment": "uucp"
+    },
+    {
+      "title": "operator",
+      "resource": "user",
+      "uid": 11,
+      "gid": 0,
+      "groups": [
+
+      ],
+      "home": "/root",
+      "shell": "/bin/sh",
+      "comment": "operator"
+    },
+    {
+      "title": "man",
+      "resource": "user",
+      "uid": 13,
+      "gid": 15,
+      "groups": [
+        "man"
+      ],
+      "home": "/usr/man",
+      "shell": "/sbin/nologin",
+      "comment": "man"
+    },
+    {
+      "title": "postmaster",
+      "resource": "user",
+      "uid": 14,
+      "gid": 12,
+      "groups": [
+
+      ],
+      "home": "/var/spool/mail",
+      "shell": "/sbin/nologin",
+      "comment": "postmaster"
+    },
+    {
+      "title": "cron",
+      "resource": "user",
+      "uid": 16,
+      "gid": 16,
+      "groups": [
+        "cron"
+      ],
+      "home": "/var/spool/cron",
+      "shell": "/sbin/nologin",
+      "comment": "cron"
+    },
+    {
+      "title": "ftp",
+      "resource": "user",
+      "uid": 21,
+      "gid": 21,
+      "groups": [
+
+      ],
+      "home": "/var/lib/ftp",
+      "shell": "/sbin/nologin",
+      "comment": ""
+    },
+    {
+      "title": "sshd",
+      "resource": "user",
+      "uid": 22,
+      "gid": 22,
+      "groups": [
+
+      ],
+      "home": "/dev/null",
+      "shell": "/sbin/nologin",
+      "comment": "sshd"
+    },
+    {
+      "title": "at",
+      "resource": "user",
+      "uid": 25,
+      "gid": 25,
+      "groups": [
+        "at"
+      ],
+      "home": "/var/spool/cron/atjobs",
+      "shell": "/sbin/nologin",
+      "comment": "at"
+    },
+    {
+      "title": "squid",
+      "resource": "user",
+      "uid": 31,
+      "gid": 31,
+      "groups": [
+        "squid"
+      ],
+      "home": "/var/cache/squid",
+      "shell": "/sbin/nologin",
+      "comment": "Squid"
+    },
+    {
+      "title": "xfs",
+      "resource": "user",
+      "uid": 33,
+      "gid": 33,
+      "groups": [
+        "xfs"
+      ],
+      "home": "/etc/X11/fs",
+      "shell": "/sbin/nologin",
+      "comment": "X Font Server"
+    },
+    {
+      "title": "games",
+      "resource": "user",
+      "uid": 35,
+      "gid": 35,
+      "groups": [
+        "users"
+      ],
+      "home": "/usr/games",
+      "shell": "/sbin/nologin",
+      "comment": "games"
+    },
+    {
+      "title": "postgres",
+      "resource": "user",
+      "uid": 70,
+      "gid": 70,
+      "groups": [
+
+      ],
+      "home": "/var/lib/postgresql",
+      "shell": "/bin/sh",
+      "comment": ""
+    },
+    {
+      "title": "nut",
+      "resource": "user",
+      "uid": 84,
+      "gid": 84,
+      "groups": [
+
+      ],
+      "home": "/var/state/nut",
+      "shell": "/sbin/nologin",
+      "comment": "nut"
+    },
+    {
+      "title": "cyrus",
+      "resource": "user",
+      "uid": 85,
+      "gid": 12,
+      "groups": [
+
+      ],
+      "home": "/usr/cyrus",
+      "shell": "/sbin/nologin",
+      "comment": ""
+    },
+    {
+      "title": "vpopmail",
+      "resource": "user",
+      "uid": 89,
+      "gid": 89,
+      "groups": [
+
+      ],
+      "home": "/var/vpopmail",
+      "shell": "/sbin/nologin",
+      "comment": ""
+    },
+    {
+      "title": "ntp",
+      "resource": "user",
+      "uid": 123,
+      "gid": 123,
+      "groups": [
+
+      ],
+      "home": "/var/empty",
+      "shell": "/sbin/nologin",
+      "comment": "NTP"
+    },
+    {
+      "title": "smmsp",
+      "resource": "user",
+      "uid": 209,
+      "gid": 209,
+      "groups": [
+        "smmsp"
+      ],
+      "home": "/var/spool/mqueue",
+      "shell": "/sbin/nologin",
+      "comment": "smmsp"
+    },
+    {
+      "title": "guest",
+      "resource": "user",
+      "uid": 405,
+      "gid": 100,
+      "groups": [
+
+      ],
+      "home": "/dev/null",
+      "shell": "/sbin/nologin",
+      "comment": "guest"
+    },
+    {
+      "title": "nobody",
+      "resource": "user",
+      "uid": 65534,
+      "gid": 65534,
+      "groups": [
+
+      ],
+      "home": "/",
+      "shell": "/sbin/nologin",
+      "comment": "nobody"
+    }
+  ],
+  "facts": {
+    "operatingsystem": "Alpine",
+    "os": {
+      "name": "Alpine",
+      "family": "Linux",
+      "release": {
+        "major": "3",
+        "minor": "4",
+        "full": "3.4.0"
+      }
+    },
+    "kernel": "Linux",
+    "osfamily": "Linux",
+    "version": "2.4.6",
+    "system_uptime": {
+      "seconds": 3702,
+      "hours": 1,
+      "days": 0,
+      "uptime": "1:01 hours"
+    },
+    "selinux": false,
+    "domain": "local",
+    "processors": {
+      "models": [
+        "Intel(R) Core(TM) i7-3740QM CPU @ 2.70GHz",
+        "Intel(R) Core(TM) i7-3740QM CPU @ 2.70GHz",
+        "Intel(R) Core(TM) i7-3740QM CPU @ 2.70GHz",
+        "Intel(R) Core(TM) i7-3740QM CPU @ 2.70GHz"
+      ],
+      "count": 4,
+      "physicalcount": 4
+    },
+    "architecture": "x86_64",
+    "hardwaremodel": "x86_64",
+    "processor0": "Intel(R) Core(TM) i7-3740QM CPU @ 2.70GHz",
+    "processor1": "Intel(R) Core(TM) i7-3740QM CPU @ 2.70GHz",
+    "processor2": "Intel(R) Core(TM) i7-3740QM CPU @ 2.70GHz",
+    "processor3": "Intel(R) Core(TM) i7-3740QM CPU @ 2.70GHz",
+    "processorcount": 4,
+    "ps": "ps -ef",
+    "ipaddress": "172.17.0.2",
+    "timezone": "UTC",
+    "rubysitedir": "/usr/local/lib/site_ruby/2.3.0",
+    "id": "root",
+    "uptime_hours": 1,
+    "interfaces": "eth0,ip6gre0,ip6tnl0,lo,sit0",
+    "ipaddress_eth0": "172.17.0.2",
+    "macaddress_eth0": "02:42:AC:11:00:02",
+    "netmask_eth0": "255.255.0.0",
+    "mtu_eth0": 1500,
+    "mtu_ip6gre0": 1448,
+    "mtu_ip6tnl0": 1452,
+    "ipaddress_lo": "127.0.0.1",
+    "netmask_lo": "255.0.0.0",
+    "mtu_lo": 65536,
+    "mtu_sit0": 1480,
+    "path": "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+    "macaddress": "02:42:AC:11:00:02",
+    "fqdn": "5158fc1d57f0.local",
+    "facterversion": "2.4.6",
+    "uptime": "1:01 hours",
+    "virtual": "docker",
+    "is_virtual": true,
+    "physicalprocessorcount": 4,
+    "operatingsystemrelease": "3.4.0",
+    "hostname": "5158fc1d57f0",
+    "operatingsystemmajrelease": "3",
+    "rubyversion": "2.3.1",
+    "kernelversion": "4.4.14",
+    "puppetversion": "4.5.2",
+    "network_eth0": "172.17.0.0",
+    "network_lo": "127.0.0.0",
+    "uptime_seconds": 3702,
+    "rubyplatform": "x86_64-linux-musl",
+    "memorysize": "1.95 GB",
+    "memoryfree": "1.75 GB",
+    "swapsize": "3.91 GB",
+    "swapfree": "3.91 GB",
+    "swapsize_mb": "4006.00",
+    "swapfree_mb": "4006.00",
+    "memorysize_mb": "2000.69",
+    "memoryfree_mb": "1792.59",
+    "kernelrelease": "4.4.14-moby",
+    "uptime_days": 0,
+    "filesystems": "ext2,ext3,ext4,iso9660,msdos,ntfs,udf,vfat",
+    "hardwareisa": "unknown",
+    "kernelmajversion": "4.4",
+    "partitions": {
+      "vda1": {
+        "size": "8204288"
+      },
+      "vda2": {
+        "size": "126011392",
+        "mount": "/etc/resolv.conf"
+      }
+    },
+    "netmask": "255.255.0.0",
+    "uniqueid": "00000000",
+    "gid": "root"
+  }
+}
