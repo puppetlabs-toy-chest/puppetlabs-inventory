@@ -1,9 +1,12 @@
 `inventory` provides a new Puppet command which outputs a data structure
-describing properties of the system on which it's run. Here's a quick
-example:
+describing properties of the system on which it's run.
+
+[![Puppet Forge](http://img.shields.io/puppetforge/v/puppetlabs/inventory.svg)](https://forge.puppetlabs.com/puppetlabs/inventory) [![Build Status](https://secure.travis-ci.org/puppetlabs/puppetlabs-inventory.png)](http://travis-ci.org/garethr/puppetlabs-inventory)
+
+Here's a quick example:
 
 ```
-puppet inventory all | head -n 20
+$ puppet inventory all | head -n 20
 {
   "schema_version": 1,
   "created": "2016-07-14T07:42:01Z",
