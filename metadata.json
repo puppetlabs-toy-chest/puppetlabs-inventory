@@ -9,5 +9,6 @@
   "issues_url": "https://github.com/puppetlabs/puppetlabs-inventory/issues",
   "dependencies": [
   
-  ]
+  ],
+  "data_provider": null
 }
