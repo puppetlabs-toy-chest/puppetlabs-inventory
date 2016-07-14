@@ -11,7 +11,7 @@ def format_resources(array) # rubocop:disable Metrics/AbcSize
         title: hash.title.to_s,
         resource: hash.type.downcase,
         provider: hash[:provider],
-        versions: Array(hash[:ensure]).map { |v| v.to_s }
+        versions: Array(hash[:ensure]).map(&:to_s)
       }
     when 'User'
       {

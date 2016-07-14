@@ -1,7 +1,7 @@
 `inventory` provides a new Puppet command which outputs a data structure
 describing properties of the system on which it's run.
 
-[![Puppet Forge](http://img.shields.io/puppetforge/v/puppetlabs/inventory.svg)](https://forge.puppetlabs.com/puppetlabs/inventory) [![Build Status](https://secure.travis-ci.org/puppetlabs/puppetlabs-inventory.png)](http://travis-ci.org/garethr/puppetlabs-inventory)
+[![Puppet Forge](http://img.shields.io/puppetforge/v/puppetlabs/inventory.svg)](https://forge.puppetlabs.com/puppetlabs/inventory) [![Build Status](https://secure.travis-ci.org/puppetlabs/puppetlabs-inventory.png)](http://travis-ci.org/puppetlabs/puppetlabs-inventory)
 
 Here's a quick example:
 
