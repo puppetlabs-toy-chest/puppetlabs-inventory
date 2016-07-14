@@ -62,7 +62,6 @@ A simple way of demonstrating the module is to use Docker. Docker is
 not required, it just makes for nice single line examples. The following
 should be run from a checkout of this repository.
 
-
 Output inventory information for the `puppet/puppet-agent-alpine` image
 from Hub:
 
@@ -89,6 +88,13 @@ examples](https://github.com/puppetlabs/puppet-in-docker-examples/tree/master/pu
 
     docker run --name puppet-agent -v /opt/puppetlabs puppet/puppet-agent-ubuntu --version
     docker run --rm -it --volumes-from=puppet-agent -v $(pwd):/src:ro -e RUBYLIB=/src/lib centos /opt/puppetlabs/bin/puppet inventory all
+
+Puppet inventory is also available as a [Docker Image from
+Hub](https://hub.docker.com/r/puppet/puppet-inventory/). So the
+following is a clearer way of doing the above
+
+    docker run --name puppet-inventory -v /opt/puppetlabs puppet/puppet-inventory
+    docker run --rm -it --volumes-from=puppet-inventory centos /opt/puppetlabs/bin/puppet inventory all
 
 
 ## Status and Schema Version
