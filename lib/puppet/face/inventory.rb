@@ -57,7 +57,7 @@ end
 Puppet::Face.define(:inventory, '0.1.0') do
   summary 'Use Puppet as a way to inventory systems'
   action(:resources) do
-    summary 'Discovery resources (including packages, services, users and groups)'
+    summary 'Discover resources (including packages, services, users and groups)'
     when_invoked do |*_args|
       inventory_resources
     end
