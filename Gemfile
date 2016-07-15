@@ -19,7 +19,7 @@ group :development do
 end
 
 group :acceptance do
-  gem 'beaker', '2.46'
+  gem 'beaker'
   gem 'beaker-rspec'
   gem 'beaker-puppet_install_helper'
   gem 'beaker_spec_helper'
