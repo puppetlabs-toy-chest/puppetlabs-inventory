@@ -44,6 +44,7 @@ end
 
 def inventory_resources
   Puppet::Type.loadall
+  Puppet.initialize_facts
   catalog = Puppet::Resource::Catalog.new
   Puppet::Type.eachtype do |type_class|
     type_class.instances.each do |i|
