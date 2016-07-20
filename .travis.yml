@@ -2,12 +2,12 @@
 language: ruby
 cache: bundler
 bundler_args: --without development
-sudo: false
 script: bundle exec rake test
 matrix:
   fast_finish: true
   include:
   - rvm: 2.1.6
+    sudo: required
     env: PUPPET_GEM_VERSION="~> 4.0"
   - rvm: 2.1.6
     sudo: required
