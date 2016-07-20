@@ -7,6 +7,8 @@ group :test do
   gem 'metadata-json-lint'
   gem 'rspec'
   gem 'rubocop'
+  gem 'simplecov'
+  gem 'simplecov-console'
 end
 
 group :development do

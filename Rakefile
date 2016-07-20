@@ -19,4 +19,5 @@ RuboCop::RakeTask.new
 task test: [
   :rubocop,
   :metadata_lint,
+  :spec,
 ]
