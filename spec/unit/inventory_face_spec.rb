@@ -6,6 +6,10 @@ describe Puppet::Face[:inventory, '0.1.0'] do
     @inventory = PuppetX::Puppetlabs::Inventory.new
   end
 
+  it 'has a default action of all' do
+    expect(subject.get_action('all')).to be_default
+  end
+
   it { subject.summary.is_a?(String) }
   [:all, :facts, :resources].each do |subcommand|
     describe "##{subcommand}" do

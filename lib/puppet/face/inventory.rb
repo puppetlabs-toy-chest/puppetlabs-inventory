@@ -16,6 +16,7 @@ Puppet::Face.define(:inventory, '0.1.0') do
   end
 
   action(:all) do
+    default
     summary 'Discover resources (including packages, services, users and groups) along with facts about the system'
     when_invoked do |*_args|
       inventory = PuppetX::Puppetlabs::Inventory.new
