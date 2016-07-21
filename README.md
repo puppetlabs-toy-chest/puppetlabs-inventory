@@ -6,7 +6,7 @@ describing properties of the system on which it's run.
 Here's a quick example:
 
 ```
-$ puppet inventory all | head -n 20
+$ puppet inventory | head -n 20
 {
   "schema_version": 1,
   "created": "2016-07-14T07:42:01Z",
@@ -65,12 +65,12 @@ should be run from a checkout of this repository.
 Output inventory information for the `puppet/puppet-agent-alpine` image
 from Hub:
 
-    docker run --rm -it -v $(pwd):/src:ro -e RUBYLIB=/src/lib puppet/puppet-agent-alpine inventory all
+    docker run --rm -it -v $(pwd):/src:ro -e RUBYLIB=/src/lib puppet/puppet-agent-alpine inventory
 
 Output the same information but instead of formatted JSON render the
 output as YAML:
 
-    docker run --rm -it -v $(pwd):/src:ro -e RUBYLIB=/src/lib puppet/puppet-agent-alpine inventory all --render-as yaml
+    docker run --rm -it -v $(pwd):/src:ro -e RUBYLIB=/src/lib puppet/puppet-agent-alpine inventory --render-as yaml
 
 Only generate the resources portion of the output:
 
@@ -94,7 +94,7 @@ Hub](https://hub.docker.com/r/puppet/puppet-inventory/). So the
 following is a clearer way of doing the above
 
     docker run --name puppet-inventory -v /opt/puppetlabs puppet/puppet-inventory
-    docker run --rm -it --volumes-from=puppet-inventory centos /opt/puppetlabs/bin/puppet inventory all
+    docker run --rm -it --volumes-from=puppet-inventory centos /opt/puppetlabs/bin/puppet inventory
 
 
 ## Status and Schema Version
