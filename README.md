@@ -80,6 +80,12 @@ Only generate the facts portion of the output:
 
     docker run --rm -it -v $(pwd):/src:ro -e RUBYLIB=/src/lib puppet/puppet-agent-alpine inventory facts
 
+If you're doing something specific to Puppet you can also output the
+full Puppet Catalog. This is also an easy way of seeing how Puppet works
+under the hood.
+
+    docker run --rm -it -v $(pwd):/src:ro -e RUBYLIB=/src/lib puppet/puppet-agent-alpine inventory catalog
+
 The above examples all use images which already have Puppet installed on
 them. This example runs an inventory of the vanilla `centos` image,
 which does not have Puppet installed. It does that by mounting Puppet

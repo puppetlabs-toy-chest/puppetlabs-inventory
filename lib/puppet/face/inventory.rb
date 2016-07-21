@@ -41,4 +41,15 @@ Puppet::Face.define(:inventory, '0.1.0') do
       JSON.pretty_generate(return_value)
     end
   end
+
+  action(:catalog) do
+    summary 'Generate a Puppet catalog for the system'
+    when_invoked do |*_args|
+      inventory = PuppetX::Puppetlabs::Inventory.new
+      inventory.catalog.to_data_hash
+    end
+    when_rendering :console do |return_value|
+      JSON.pretty_generate(return_value)
+    end
+  end
 end

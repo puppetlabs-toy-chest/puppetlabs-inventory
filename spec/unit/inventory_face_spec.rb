@@ -11,7 +11,7 @@ describe Puppet::Face[:inventory, '0.1.0'] do
   end
 
   it { subject.summary.is_a?(String) }
-  [:all, :facts, :resources].each do |subcommand|
+  [:all, :facts, :resources, :catalog].each do |subcommand|
     describe "##{subcommand}" do
       it 'should run without error' do
         allow(PuppetX::Puppetlabs::Inventory).to receive(:new).and_return(@inventory)

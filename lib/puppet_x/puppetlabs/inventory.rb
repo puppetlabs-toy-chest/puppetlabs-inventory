@@ -12,14 +12,13 @@ module PuppetX
         @catalog = Puppet::Resource::Catalog.new
         Puppet::Type.eachtype do |type_class|
           type_class.instances.each do |i|
-            catalog.add_resource(i)
+            catalog.add_resource(i.to_resource)
           end if REQUIRED_TYPES.include?(type_class.name)
         end
       end
 
       def generate
-        data = @catalog.relationship_graph.vertices.map(&:to_resource)
-        format_resources(data).flatten
+        format_resources(@catalog.vertices).flatten
       end
 
       private
