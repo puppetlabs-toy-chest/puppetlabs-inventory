@@ -15,3 +15,7 @@ describe command('puppet inventory resources') do
   its(:exit_status) { should eq 0 }
   its(:stdout) { should match /"resource": "package"/ }
 end
+
+describe command('puppet inventory catalog') do
+  its(:exit_status) { should eq 0 }
+end
