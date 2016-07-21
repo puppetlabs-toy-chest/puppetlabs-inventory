@@ -2,7 +2,10 @@ require 'spec_helper'
 require 'puppet_x/puppetlabs/inventory'
 
 describe PuppetX::Puppetlabs::Inventory do
-  let(:inventory) { PuppetX::Puppetlabs::Inventory.new }
+  before(:all) do
+    @inventory = PuppetX::Puppetlabs::Inventory.new
+    @data = @inventory.generate
+  end
 
   it 'should setup Puppet' do
     expect(Puppet).to receive(:initialize_facts).and_call_original
@@ -12,20 +15,18 @@ describe PuppetX::Puppetlabs::Inventory do
 
   context '#catalog' do
     it 'should return a Catalog object' do
-      expect(inventory.catalog).to be_a(Puppet::Resource::Catalog)
+      expect(@inventory.catalog).to be_a(Puppet::Resource::Catalog)
     end
   end
 
   context '#generate' do
-    let(:data) { inventory.generate }
-
     it 'should return an array of resources' do
-      expect(data).to be_a(Array)
+      expect(@data).to be_a(Array)
     end
 
     ['package', 'service', 'user', 'group'].each do |resource_name|
       it "should have collected some #{resource_name}" do
-        expect(data.count { |resource| resource[:resource] == resource_name }).to be > 0
+        expect(@data.count { |resource| resource[:resource] == resource_name }).to be > 0
       end
     end
   end
