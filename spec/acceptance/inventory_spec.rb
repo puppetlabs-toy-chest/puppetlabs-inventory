@@ -19,3 +19,7 @@ end
 describe command('puppet inventory catalog') do
   its(:exit_status) { should eq 0 }
 end
+
+describe command('puppet inventory report') do
+  its(:exit_status) { should eq 0 }
+end

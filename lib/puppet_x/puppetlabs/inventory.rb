@@ -5,14 +5,15 @@ module PuppetX
 
       attr_accessor :catalog
 
-      def initialize
+      def initialize(with_resources: true)
         Puppet::Type.loadall
         Puppet.initialize_facts
 
         @catalog = Puppet::Resource::Catalog.new
         Puppet::Type.eachtype do |type_class|
           type_class.instances.each do |i|
-            catalog.add_resource(i.to_resource)
+            i = i.to_resource if with_resources
+            catalog.add_resource(i)
           end if REQUIRED_TYPES.include?(type_class.name)
         end
       end

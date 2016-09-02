@@ -52,4 +52,18 @@ Puppet::Face.define(:inventory, '0.1.0') do
       JSON.pretty_generate(return_value)
     end
   end
+
+  action(:report) do
+    summary 'Generate a Puppet report for the system'
+    when_invoked do |*_args|
+      inventory = PuppetX::Puppetlabs::Inventory.new(with_resources: false)
+      report = Puppet::Transaction::Report.new('inventory')
+      inventory.catalog.apply(report: report)
+      report.finalize_report
+      report.to_data_hash
+    end
+    when_rendering :console do |return_value|
+      JSON.pretty_generate(return_value)
+    end
+  end
 end
