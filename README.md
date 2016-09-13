@@ -99,7 +99,7 @@ Puppet inventory is also available as a [Docker Image from
 Hub](https://hub.docker.com/r/puppet/puppet-inventory/). So the
 following is a clearer way of doing the above
 
-    docker run --name puppet-inventory -v /opt/puppetlabs puppet/puppet-inventory
+    docker run --name puppet-inventory puppet/puppet-inventory
     docker run --rm -it --volumes-from=puppet-inventory centos /opt/puppetlabs/bin/puppet inventory
 
 
