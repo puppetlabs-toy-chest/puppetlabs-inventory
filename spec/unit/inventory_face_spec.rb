@@ -10,6 +10,10 @@ describe Puppet::Face[:inventory, '0.1.0'] do
     expect(subject.get_action('all')).to be_default
   end
 
+  it 'by default does not ignore any facts' do
+    expect(subject.get_option('ignore_facts').default).to eq('')
+  end
+
   it { subject.summary.is_a?(String) }
   [:all, :facts, :resources, :catalog].each do |subcommand|
     describe "##{subcommand}" do
