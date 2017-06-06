@@ -1,18 +1,18 @@
 require 'spec_helper'
 require 'puppet_x/puppetlabs/facts_inventory'
 
-describe PuppetX::Puppetlabs::FactsInventory do
-  before(:all) { @facts = ['timezone', 'uptime_days'] }
+describe PuppetX::Puppetlabs::FactsInventory do # rubocop:disable Metrics/BlockLength
+  before(:all) { @facts = %w[timezone uptime_days] }
 
   context 'with no arguments' do
     before(:all) do
-      @inventory = PuppetX::Puppetlabs::FactsInventory.new
+      @inventory = described_class.new
       @data = @inventory.generate
     end
-    it 'should return a hash of facts' do
+    it 'returns a hash of facts' do
       expect(@data).to be_a(Hash)
     end
-    it 'should have some default facts' do
+    it 'has some default facts' do
       @facts.each do |fact|
         expect(@data.key?(fact)).to be_truthy
       end
@@ -21,13 +21,13 @@ describe PuppetX::Puppetlabs::FactsInventory do
 
   context 'with some ignored facts' do
     before(:all) do
-      @inventory = PuppetX::Puppetlabs::FactsInventory.new(ignore: @facts)
+      @inventory = described_class.new(ignore: @facts)
       @data = @inventory.generate
     end
-    it 'should return a hash of facts' do
+    it 'returns a hash of facts' do
       expect(@data).to be_a(Hash)
     end
-    it 'should not have ignored facts' do
+    it 'does not have ignored facts' do
       @facts.each do |fact|
         expect(@data.key?(fact)).to be_falsy
       end
