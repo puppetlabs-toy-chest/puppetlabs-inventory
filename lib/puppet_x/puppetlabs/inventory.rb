@@ -12,9 +12,14 @@ module PuppetX
         @catalog = Puppet::Resource::Catalog.new
         Puppet::Type.eachtype do |type_class|
           if REQUIRED_TYPES.include?(type_class.name)
-            type_class.instances.each do |i|
-              i = i.to_resource if with_resources
-              catalog.add_resource(i)
+            begin
+              type_class.instances.each do |i|
+                i = i.to_resource if with_resources
+                catalog.add_resource(i)
+              end
+            rescue StandardError # rubocop:disable Lint/HandleExceptions
+              # Individual types should be able to fail without the
+              # whole run failing.
             end
           end
         end
