@@ -12,12 +12,13 @@ module PuppetX
       end
 
       private
-        def post_process(facts)
-          @ignore_facts.each do |ignore|
-            facts = facts.tap { |inner| inner.delete(ignore) }
-          end
-          facts
+
+      def post_process(facts)
+        @ignore_facts.each do |ignore|
+          facts = facts.tap { |inner| inner.delete(ignore) }
         end
+        facts
+      end
     end
   end
 end

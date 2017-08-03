@@ -2,7 +2,7 @@ require 'puppet/face'
 require 'puppet_x/puppetlabs/inventory'
 require 'puppet_x/puppetlabs/facts_inventory'
 
-Puppet::Face.define(:inventory, '0.1.0') do
+Puppet::Face.define(:inventory, '0.1.0') do # rubocop:disable Metrics/BlockLength
   summary 'Use Puppet as a way to inventory systems'
   option '--ignore-facts STRING' do
     summary 'A comma separated list of top level facts to ignore'
@@ -11,7 +11,7 @@ Puppet::Face.define(:inventory, '0.1.0') do
 
   action(:resources) do
     summary 'Discover resources (including packages, services, users and groups)'
-    when_invoked do |*options|
+    when_invoked do |*_options|
       inventory = PuppetX::Puppetlabs::Inventory.new
       inventory.generate
     end
@@ -53,7 +53,7 @@ Puppet::Face.define(:inventory, '0.1.0') do
 
   action(:catalog) do
     summary 'Generate a Puppet catalog for the system'
-    when_invoked do |*options|
+    when_invoked do |*_options|
       inventory = PuppetX::Puppetlabs::Inventory.new
       inventory.catalog.to_data_hash
     end
@@ -64,7 +64,7 @@ Puppet::Face.define(:inventory, '0.1.0') do
 
   action(:report) do
     summary 'Generate a Puppet report for the system'
-    when_invoked do |*options|
+    when_invoked do |*_options|
       inventory = PuppetX::Puppetlabs::Inventory.new(with_resources: false)
       report = Puppet::Transaction::Report.new('inventory')
       inventory.catalog.apply(report: report)

@@ -18,7 +18,7 @@ RSpec.configure do |c|
   c.before :suite do
     puppet_module_install(source: proj_root, module_name: module_name)
     hosts.each do |host|
-      BeakerSpecHelper::spec_prep(host)
+      BeakerSpecHelper.spec_prep(host)
     end
   end
 end

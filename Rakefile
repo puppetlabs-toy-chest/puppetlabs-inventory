@@ -16,8 +16,8 @@ end
 
 RuboCop::RakeTask.new
 
-task test: [
-  :rubocop,
-  :metadata_lint,
-  :spec,
+task test: %i[
+  rubocop
+  metadata_lint
+  spec
 ]
