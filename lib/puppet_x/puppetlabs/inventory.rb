@@ -1,7 +1,7 @@
 module PuppetX
   module Puppetlabs
     class Inventory
-      REQUIRED_TYPES = %i[group package service user].freeze
+      REQUIRED_TYPES = %i[group package service user lumogon].freeze
 
       attr_accessor :catalog
 
@@ -30,6 +30,10 @@ module PuppetX
       end
 
       private
+
+      def nil_or_absent?(thing)
+        thing.nil? || thing == :absent
+      end
 
       def format_resources(array)
         array.map do |hash| # rubocop:disable Metrics/BlockLength
@@ -66,6 +70,21 @@ module PuppetX
               enable: hash[:enable],
               provider: hash[:provider]
             }
+          when 'Lumogon'
+            response = {
+              title: hash.title.to_s,
+              resource: 'container',
+              hostname: hash[:hostname],
+              id: hash[:id],
+              os: hash[:os],
+              platform: hash[:platform],
+              platformfamily: hash[:platformfamily],
+              platformversion: hash[:platformversion]
+            }
+            %i[dpkg rpm apk labels].each do |capability|
+              response[capability] = hash[capability] unless nil_or_absent?(hash[capability])
+            end
+            response
           end
         end
       end

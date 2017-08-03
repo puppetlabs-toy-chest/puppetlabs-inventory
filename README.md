@@ -37,6 +37,10 @@ Specifically `inventory` outputs information on:
 * Services
 * Facts
 
+If you have the [Lumogon
+module](https://forge.puppet.com/puppetlabs/lumogon) installed then it
+will also detect information about running Docker containers.
+
 All of this information is already available via the RAL and `puppet
 resource` or via `facter`. `inventory` simply offers a higher-level
 interface, a single command that outputs everything in a simplified data

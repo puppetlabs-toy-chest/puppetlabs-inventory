@@ -33,7 +33,6 @@ describe PuppetX::Puppetlabs::Inventory do # rubocop:disable Metrics/BlockLength
     %w[package service user].each do |resource_name|
       it "collects #{resource_name} resources" do
         skip 'Skipping as too dependent on system on which tests are run'
-        expect(@data.count { |resource| resource[:resource] == resource_name }).to be > 0
       end
     end
   end
